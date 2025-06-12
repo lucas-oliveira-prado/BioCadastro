@@ -24,7 +24,64 @@
     </header>
 
     <main>
-        <!-- Page content will be added later -->
+        <div class="container">
+            <h1>Cadastro de Animais</h1>
+            
+            <div class="form-container">
+                <form id="animalForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome do Animal</label>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sexo">Sexo</label>
+                            <select id="sexo" name="sexo">
+                                <option value="">Selecione o sexo</option>
+                                <option value="0">Macho</option>
+                                <option value="1">Fêmea</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="raca">Raça</label>
+                            <select id="raca" name="raca">
+                                <option value="">Selecione a raça</option>
+                                <option value="1">Angus</option>
+                                <option value="2">Holstein</option>
+                                <option value="3">Nelore</option>
+                                <option value="4">Brahman</option>
+                                <option value="5">Simmental</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="data_nascimento">Data de Nascimento</label>
+                            <input type="datetime-local" id="data_nascimento" name="data_nascimento">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select id="status" name="status">
+                                <option value="1">Ativo</option>
+                                <option value="0">Inativo</option>
+                                <option value="2">Vendido</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="window.history.back()">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Cadastrar Animal</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <!-- Modal Sobre -->
@@ -53,28 +110,28 @@
                 
                 <form id="contatoForm">
                     <div class="form-group">
-                        <label for="nome" class="required">Seu nome</label>
-                        <input type="text" id="nome" required>
+                        <label for="nome">Seu nome</label>
+                        <input type="text" id="nome">
                     </div>
                     
                     <div class="form-group">
-                        <label for="email" class="required">Seu e-mail</label>
-                        <input type="email" id="email" required>
+                        <label for="email">Seu e-mail</label>
+                        <input type="text" id="email">
                     </div>
                     
                     <div class="form-group">
-                        <label for="telefone" class="required">Seu telefone</label>
-                        <input type="tel" id="telefone" required>
+                        <label for="telefone">Seu telefone</label>
+                        <input type="tel" id="telefone">
                     </div>
                     
                     <div class="form-group">
-                        <label for="assunto" class="required">Assunto</label>
-                        <input type="text" id="assunto" required>
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto">
                     </div>
                     
                     <div class="form-group">
-                        <label for="mensagem" class="required">Mensagem</label>
-                        <textarea id="mensagem" required></textarea>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem"></textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
